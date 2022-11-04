@@ -11,3 +11,6 @@ Once we find the databases. We use the name of the database to get the names of 
 We see for any tables with anything to do with data of users. For me I found a table titled "users". 
 Then I check to see the columns of the table "users". For this I used the third command. If there are user passwords and user names. Then you have hit jackpot! 
 So know all we need to get is the whole table. So for that we use the last command. That's it. We use the credentials found there to login in the database. 
+
+Roll_Number: 221-437659
+Name: Muhammmad Abdullah Qureshi
